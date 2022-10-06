@@ -7,9 +7,9 @@ module FND_Select_Decoder(
     );
 
     reg [3:0] r_digit;
-    
-    assign o_digit = r_digit;
 
+    assign o_digit = r_digit;
+    
     always @(i_digitSelect or i_en) begin
         if (i_en) begin
             r_digit = 4'b1111;
